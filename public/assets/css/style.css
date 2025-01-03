@@ -3,6 +3,8 @@
 :root {
   --primary: #0a0e27;
   --orange: #fb9129;
+  --sky-blue: #04db03;
+  --reddish: #cb0a31;
 }
 * {
   margin: 0;
