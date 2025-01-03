@@ -2,9 +2,8 @@
 
 :root {
   --primary: #0a0e27;
-  --orange: #fb9129;
-  --sky-blue: #04db03;
   --reddish: #cb0a31;
+  --background: #ecfaff;
 }
 * {
   margin: 0;
@@ -12,5 +11,8 @@
   box-sizing: border-box;
 }
 html {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background: var(--background);
 }
