@@ -109,7 +109,7 @@ body {
 .image-container img {
   margin-left: 400px;
   z-index: 1;
-  margin-top: 29px;
+  margin-top: -17px;
 }
 .right-content .header {
   text-align: center;
@@ -146,9 +146,10 @@ form {
   outline: 1px solid #f8fdff;
 }
 a {
-  color: var(--skyblue);
+  color: var(--gray-300);
   text-decoration: none;
   font-weight: 500;
+  font-size: 14px;
 }
 #submit {
   width: 100%;
@@ -158,13 +159,11 @@ a {
   cursor: pointer;
   color: #fff;
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   line-height: normal;
-  justify-content: center;
-  align-items: center;
   border-radius: var(--radius);
-  background: linear-gradient(189deg, #9ae1ff 0.26%, #5cf 99.23%);
+  background: linear-gradient(222deg, #86dbff 11.5%, #47C8FF 95.4%);
 }
 
 .lines {
@@ -181,19 +180,22 @@ a {
   height: 1px;
 }
 .icons {
-  margin: 30px;
+  width: 30%;
+  margin: 30px auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
-.icons .icon {
-  width: 70px;
-  height: 70px;
+.icon {
+  background-color: white;
+  justify-content: space-between;
+  width: 45px;
+  padding: 5px;
+  margin: auto;
+}
+svg {
   flex-shrink: 0;
   fill: #fff;
-  filter: drop-shadow(0px 9px 19px rgba(0, 0, 0, 0.1))
-    drop-shadow(0px 34px 34px rgba(0, 0, 0, 0.09))
-    drop-shadow(0px 77px 46px rgba(0, 0, 0, 0.05))
-    drop-shadow(0px 136px 54px rgba(0, 0, 0, 0.01))
-    drop-shadow(0px 213px 60px rgba(0, 0, 0, 0));
+  border-radius: 100%;
+  box-shadow: var(--shadow);
 }
