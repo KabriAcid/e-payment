@@ -35,7 +35,7 @@
                                 <span>Email</span>
                             </div>
                             <div class="input-field">
-                                <input type="email" name="email" class="form-control" placeholder="Email">
+                                <input type="email" name="email" class="form-control">
                             </div>
                         </div>
                         <!-- Password -->
