@@ -35,23 +35,23 @@
                                 <span>Email</span>
                             </div>
                             <div class="input-field">
-                                <input type="email" name="email" class="form-control">
+                                <input type="email" name="email" class="form-control" id="email">
                             </div>
                         </div>
                         <!-- Password -->
                         <div class="form-row">
                             <div class="label">
-                                <span>Password</span>
+                                <span>Amount</span>
                             </div>
                             <div class="input-field">
-                                <input type="password" name="password" class="form-control">
+                                <input type="number" name="amount" class="form-control" id="amount">
                             </div>
                         </div>
                         <!-- Button -->
                         <!-- Forgot password -->
-                        <p style="text-align: right;margin-top: 10px;"><a href="">Forgot password?</a></p>
+                        <!-- <p style="text-align: right;margin-top: 10px;"><a href="">Forgot password?</a></p> -->
                         <div class="form-row">
-                            <button type="submit" id="submit" name="submit">Sign in</button>
+                            <button type="button" id="submit" name="submit" onclick="makePayment()">Pay Now</button>
                         </div>
                         <div class="form-row">
                             <div class="lines">
@@ -87,6 +87,37 @@
             </div>
         </div>
     </main>
+
+    <?php
+    // Six random digit number for transaction reference
+    $tx_ref = 'PAY_ID' . rand(100000, 999999);
+    ?>
+    <script src="https://checkout.flutterwave.com/v3.js"></script>
+    <script>
+        function makePayment() {
+            FlutterwaveCheckout({
+                public_key: "FLWPUBK_TEST-a869fb233e0ad455be16b348a4ef4394-X",
+                tx_ref: "<?php echo $tx_ref; ?>",
+                amount: document.getElementById('amount').value,
+                currency: "NGN",
+                payment_options: "card, ussd",
+                redirect_url: "https://your-redirect-url.com",
+                customer: {
+                    email: document.getElementById('email').value,
+                    // phone_number: document.getElementById('phone').value,
+                    name: "Abdullahi Kabri",
+                },
+                callback: function(data) {
+                    console.log(data);
+                },
+                customizations: {
+                    title: "Payment for E-payment App",
+                    description: "Payment for items in cart",
+                    logo: "favicon.svg",
+                },
+            });
+        }
+    </script>
 </body>
 
 </html>
