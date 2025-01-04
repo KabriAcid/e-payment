@@ -2,7 +2,7 @@
 
 :root {
   --primary: #0a0e27;
-  --reddish: #cb0a31;
+  --brownish: #e5b788;
   --background: #f9fdff;
   --skyblue: #82cfe5;
 
@@ -37,7 +37,7 @@ body {
   width: 80%;
   display: flex;
   align-items: center;
-  z-index: -1;
+  /* z-index: -1; */
   height: 90vh;
   /* padding: 30px; */
   background-color: #f8fdff;
@@ -54,6 +54,7 @@ body {
 }
 .right-content {
   width: 40%;
+  z-index: 1;
   padding: 33px;
   background-color: #fff;
   height: 100%;
@@ -140,13 +141,15 @@ form {
   border-radius: var(--radius);
   border: 1px solid #c2c2c2;
   height: 54px;
-  padding: 8px 12px;
+  font-size: 17px;
+  color: var(--gray-700);
+  padding: 8px 16px;
 }
 .input-field input:focus {
   outline: 1px solid #f8fdff;
 }
 a {
-  color: var(--gray-300);
+  color: var(--brownish);
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
