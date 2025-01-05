@@ -1,5 +1,6 @@
 <?php
 require '../../config/config.php';
+require 'keys.php';
 
 if (isset($_GET['transaction_id'])) {
     $transactionId = $_GET['transaction_id']; // Extract the transaction ID
@@ -17,7 +18,7 @@ if (isset($_GET['transaction_id'])) {
         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
         CURLOPT_CUSTOMREQUEST => "GET",
         CURLOPT_HTTPHEADER => array(
-            "Authorization: Bearer FLWSECK_TEST-84cf2876f8ae59732c2e8de209991d84-X"
+            "Authorization: Bearer $secret_key"
         ),
     ));
 
