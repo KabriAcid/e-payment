@@ -16,8 +16,8 @@ This project is an E-payment application that allows users to make payments onli
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/e-payment-app.git
-    cd e-payment-app
+    git clone https://github.com/KabriAcid/e-payment.git
+    cd e-payment
     ```
 
 2. Set up your local server (e.g., XAMPP, WAMP, MAMP) and place the project in the appropriate directory (e.g., `htdocs` for XAMPP).
@@ -30,7 +30,7 @@ This project is an E-payment application that allows users to make payments onli
 
 2. Access the project in your web browser:
     ```
-    http://localhost/e-payment-app
+    http://localhost/e-payment/public/
     ```
 
 ## Configuration
@@ -60,9 +60,9 @@ The payment integration is handled using Flutterwave. Below are the key steps in
 Create the database and table to store the transaction details:
 
 ```sql
-CREATE DATABASE epayment_app;
+CREATE DATABASE e-payment;
 
-USE epayment_app;
+USE e-payment;
 
 CREATE TABLE transactions (
     id INT AUTO_INCREMENT PRIMARY KEY,
