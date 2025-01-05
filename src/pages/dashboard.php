@@ -12,6 +12,7 @@ $result = $conn->query($sql);
 <head>
     <title>Dashboard</title>
     <link rel="stylesheet" href="../../public/assets/css/style.css">
+    <link rel="stylesheet" href="../../public/favicon.svg">
 </head>
 
 <body>

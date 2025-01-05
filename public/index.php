@@ -91,12 +91,13 @@
     <?php
     // Six random digit number for transaction reference
     $tx_ref = 'PAY_ID' . rand(100000, 999999);
+    require '../src/pages/keys.php';
     ?>
     <script src="https://checkout.flutterwave.com/v3.js"></script>
     <script>
         function makePayment() {
             FlutterwaveCheckout({
-                public_key: "FLWPUBK_TEST-a869fb233e0ad455be16b348a4ef4394-X",
+                public_key: "<?php echo $public_key ?>",
                 tx_ref: "<?php echo $tx_ref; ?>",
                 amount: document.getElementById('amount').value,
                 currency: "NGN",

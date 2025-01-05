@@ -47,7 +47,7 @@ if (isset($_GET['transaction_id'])) {
                 echo "<script>
                         setTimeout(function() {
                             window.location.href = 'dashboard.php';
-                        }, 5000); // 5 seconds
+                        }, 3000); // 3 seconds
                       </script>";
             } else {
                 echo "Error: " . $sql . "<br>" . $conn->error;
