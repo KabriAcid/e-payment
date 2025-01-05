@@ -101,7 +101,7 @@
                 amount: document.getElementById('amount').value,
                 currency: "NGN",
                 payment_options: "card, ussd",
-                redirect_url: "../pages/dashboard.php",
+                redirect_url: "../src/pages/redirect.php",
                 customer: {
                     email: document.getElementById('email').value,
                     // phone_number: document.getElementById('phone').value,

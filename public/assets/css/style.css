@@ -166,7 +166,7 @@ a {
   font-weight: 600;
   line-height: normal;
   border-radius: var(--radius);
-  background: linear-gradient(222deg, #86dbff 11.5%, #47C8FF 95.4%);
+  background: linear-gradient(222deg, #86dbff 11.5%, #47c8ff 95.4%);
 }
 
 .lines {
@@ -201,4 +201,26 @@ svg {
   fill: #fff;
   border-radius: 100%;
   box-shadow: var(--shadow);
+}
+
+table {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
 }
