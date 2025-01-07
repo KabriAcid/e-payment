@@ -53,7 +53,7 @@ The payment integration is handled using Flutterwave. Below are the key steps in
     - If the payment is successful, it updates the database and displays a success message.
 
 3. **Redirect to Dashboard**:
-    - The success message is displayed for a few seconds before redirecting the user to `dashboard.php`.
+    - The success message is displayed briefly before redirecting the user to `dashboard.php`.
 
 ## Database Structure
 
